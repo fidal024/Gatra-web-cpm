@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aplicación para registrar videojuegos">
+        <meta name="author" content="Pablo">
+        <meta name="keywords" content="videojuegos, consolas, reviews">
+
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link rel="stylesheet" href="css/community.css" type="text/css">
+        <script src="js/myJS.js" defer></script>
+
+        <title>GaTra - Comunidad</title> 
+    </head>
+
+    <body>
+        <header>
+            <h1>Comunidad</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> GaTra </a></li>
+                    <li><a href="community.html"> Comunidad </a></li>
+                    <li><a href="profile.html"> Perfil </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <h2>Juegos recientes</h2>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3>Filtrar por:</h3>
+                </div>
+                    <h4>Plataforma</h4>
+
+                <!--ReqJ2-->
+                <select id="plataforma" name="plataforma" onchange="updatePreview()">
+                    <option value="" disabled selected hidden>Slecciona una plataforma</option>
+                    
+                    <option value="PC">PC</option>
+
+                    <optgroup label="Nintendo">
+                        <option value="Nintendo">Switch/Switch2</option>
+                        <option value="Nintendo">DS/3DS</option>
+                        <option value="Nintendo">Wii/Wii U</option>
+                    </optgroup>
+
+                    <optgroup label="PlayStation">
+                        <option value="PlayStation">PlayStation 3</option>
+                        <option value="PlayStation">PlayStation 4</option>
+                        <option value="PlayStation">PlayStation 5</option>
+                        <option value="PlayStation">PlayStation Vita</option>
+                    </optgroup>
+
+                    <optgroup label="Xbox">
+                        <option value="Xbox">Xbox 360</option>
+                        <option value="Xbox">Xbox One</option>
+                    </optgroup>
+                </select>
+
+
+                <label for="mas18">Incluir juegos +18
+                    <!--ReqJ2-->
+                    <input type="checkbox" id="mas18" value="mas18" onchange="updatePreview();">
+                </label>
+
+                <h4>Filtrar por número de jugadores</h4>
+                <!--ReqJ2-->
+                <input name="numJug" type="radio" id="unJug" value="unJug" onchange="updatePreview()"/> Un jugador<br/>
+                <input name="numJug" type="radio" id="mulJug" value="mulJug" onchange="updatePreview()"/> Multijugador<br/>
+                <input name="numJug" type="radio" id="cooJug" value="cooJug" onchange="updatePreview()"/> Cooperativo <br/>
+            </section>
+
+            <section>
+                <h3>Filtros aplicados:</h3>
+                <div id="preview"> 
+                    <p>Se mostrarán los filtros aplicados:</p>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <figure>
+                        <img src="/resources/images/ResidentEvil9Requiem_logo.jpg" alt="Portada de Resident Evil 9 Requiem"
+                        title="RE9: Requiem" width="110" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="/resources/images/Pokopia_logo.jpg" alt="Portada de Pokopia"
+                        title="Pokopia" width="110" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="/resources/images/SilentHillF_logo.jpg" alt="Portada de Silent Hill F"
+                        title="Silent Hill F" width="110" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="/resources/images/TheBindingofIsaac_logo.jpg" alt="Portada de The Binding of Isaac"
+                        title="The Binding of Isaac" width="110" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img src="/resources/images/TheOutlastTrials_logo.jpg" alt="Portada de The Outlast Trials"
+                        title="The Outlast Trials" width="110" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> GaTra - GameTracker 2026. Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>

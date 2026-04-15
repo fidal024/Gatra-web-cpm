@@ -1,0 +1,138 @@
+/* ReqC1 */
+body{font-family:'Segoe UI'}
+
+/* ReqC2 */
+p{font-size: 1em;}
+
+/* ReqC3 */
+h1{font-size: 3.5em;
+    color:darkmagenta;}
+h2{font-size: 1.5em;}
+
+/* ReqC4 */
+main{width: 80vw;
+    margin: 0 auto;}
+
+/* ReqC6 */
+header{background-color:rgb(236, 163, 214);
+    text-align: center;
+    margin-left: 1em;
+    text-shadow:blueviolet 3px 4px 2px;}
+nav{text-align: left;
+    text-shadow:black 0px 0.3px 0.3px;}
+footer{color:lightgrey;
+    text-align: left;
+    margin-left: 1em;
+    background-color:rgb(20, 32, 52)}
+article{
+    text-align: justify;}
+
+/* ReqC8 */
+.titulos{color: darkmagenta;
+    font-weight: bold;}
+.borde{border: solid violet;
+    border-width: 2px 2px;}
+
+/* ReqC9 */
+#resenias {font-weight: lighter}
+
+/* ReqC10 */
+nav > ul {font-style: italic;}
+
+/* ReqC11 */
+main h2 {text-decoration: underline;}
+
+/* ReqC12 */
+a + figcaption {font-size: 0.8em;
+    font-style: italic;}
+
+/* ReqC14 */
+a:hover{background-color: violet;
+    color: black;}
+
+/* ReqC16 */
+ul{list-style-type:square;}
+ol{list-style-type:circle;}
+
+/* ReqC17 */
+caption{caption-side: top;
+    font-size: 1.2em;
+    font-style:oblique;
+    font-weight: bold;}
+
+/* ReqC18 */
+th{background-color: rgb(76, 68, 129);
+    color: rgb(198, 236, 245);}
+td{background-color: rgb(179, 181, 194);
+    color: rgb(34, 35, 36);}
+
+/* ReqC19 */
+textarea, input{font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(223, 195, 250);
+    border: 0em solid;}
+
+textarea:focus, input:focus{border: 0.25em solid rgb(209, 171, 245);
+    outline: none;}
+
+input:required{border-style: double;
+    border-color: blueviolet;}
+
+/* ReqC20 */
+.btn{background-color: darkmagenta;
+    color: aliceblue;
+    font-weight: bold;
+    border: none;
+    padding: 0.2em;}
+
+.btn:hover{background-color: rgb(158, 66, 158);
+    border: solid darkmagenta;}
+
+/* ReqC21 */
+@media (max-width: 600px) {
+  header {text-align: center;}
+  main{width: 95%}
+}
+
+/* ReqC23 */
+section{background-color: rgb(247, 212, 236);
+    box-shadow: 10px 10px rgb(252, 198, 236);}
+
+ /* ReqC24 */
+article{margin-bottom: 3em;}
+form div{margin-bottom: 0.6em;}
+
+/* ReqJ3 */
+.valid{
+    border-color: rgb(21, 248, 70);
+    box-shadow: 0 0 5px rgb(21, 248, 70);
+    background-color: rgb(203, 245, 214);
+}
+.invalid{
+    border-color: rgb(250, 32, 32);
+    box-shadow: 0 0 5px rgb(250, 32, 32);
+    background-color: rgb(253, 191, 191);
+}
+
+/* ReqJ5 */
+.error-box{
+    color: rgb(250, 32, 32);   
+    border: 0.07em solid rgb(241, 154, 154);
+    background-color:rgb(241, 140, 140);
+    border-bottom-right-radius: 0.5em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+
+    display: none;
+}
+
+.error-box.visible{
+    display: block;
+}
+
+/* ReqJ6 */
+.mayusActiva{
+    color: rgb(250, 32, 32);
+    font-weight: bold;
+    font-size: 0.8em;
+}

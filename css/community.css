@@ -1,0 +1,24 @@
+/* ReqS13 */
+ul{list-style-type:none;
+    text-align: center;
+    margin-right: 3em;}
+
+li{display: inline;}
+
+a{border: solid rgb(190, 101, 164);
+    margin-left: 1em;}
+
+h4{margin-bottom: 0.2em;}
+
+figure img{
+    margin-top: 10px;
+    filter: grayscale(50%);
+    transition: filter 1s;
+    
+}
+
+/* ReqJ8 */
+img.highlight{
+    border: 4px rgb(131, 97, 131) solid;
+    filter: grayscale(0%);
+}

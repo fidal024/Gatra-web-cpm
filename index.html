@@ -1,0 +1,211 @@
+<!--ReqH1-->
+<!DOCTYPE html>
+<html lang="es-ES">
+    <!--ReqH2-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aplicación para registrar videojuegos">
+        <meta name="author" content="Pablo">
+        <meta name="keywords" content="videojuegos, consolas, reviews">
+
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+        <script src="js/myJS.js" defer></script>
+
+        <title>GaTra - GameTracker</title> 
+    </head>
+
+    <body>
+        <!--ReqH3-->
+        <header>
+            <!--ReqH5-->
+            <h1>GaTra</h1>
+            <!--ReqH8-->
+            <nav>
+                <ul>
+                    <!--ReqH11-->
+                    <li><a href="index.html"> GaTra </a></li>
+                    <li><a href="community.html"> Comunidad </a></li>
+                    <li><a href="profile.html"> Perfil </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--ReqH4-->
+            <section>
+                <!--ReqC8-->
+                <h2 class="titulos">Bienvenidos a GameTracker</h2>
+                <!--ReqH7-->
+                <p><dfn>GaTra</dfn> es una aplicación web donde podrás registrar aquellos videojuegos que estén jugando, así como organizar su proceso.</p>
+                <!--ReqH6-->
+                <p><strong>Registra</strong> tus juegos, <strong>añade</strong> una valoración, y <strong>descubre</strong> lo que opinan los demás usuarios.</p>
+                <article>
+                    <h2 class="titulos">¿Cómo empiezo?</h2>
+                    <!--ReqC8-->
+                    <div class="borde">
+                        <p>Primero deberás crear una <strong>cuenta</strong>. Personaliza tu perfil a tu gusto, y podrás añadir tus juegos.</p>
+                    </div>
+                    <div class="borde">
+                        <p>En la sección de búsqueda podrás introducir el nombre del videojuego que quieras. También podrás ver las opiniones de los demás y añadir un <em>Me Gusta</em> si son de tu agrado. ¡Llegará a más gente!</p>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2 class="titulos">Crear una cuenta en GaTra</h2>
+                <!--ReqH16--> <!--ReqJ4-->
+                <form action="mailto:correo@gatra.com" method="post" onsubmit="return validateForm();" novalidate>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <!--ReqH17--> <!--ReqJ3--> <!--ReqJ6-->
+                        <input type="text" id="nombre" name="nombre" required oninput="checkValidityState(this)" onkeydown="handleKey(event)">
+                        <span id="message"></span>
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <!--ReqJ3-->
+                        <input type="email" id="email" name="email" required oninput="checkValidityState(this)">
+                        <label for="password">Contraseña:</label>
+                        <!--ReqJ3-->
+                        <input type="password" id="password" name="password" required oninput="checkValidityState(this)">
+                        <label for="telefono">Teléfono:</label>
+                        <!--ReqH18-->
+                        <input type="tel" id="telefono" name="telefono" pattern="^(\+34|0034|34)?[6|7][0-9]{8}$">
+                    </div>
+                    <div>
+                        <label for="descripcion">Descripción:</label>
+                        <textarea id="desc" name="desc"></textarea><div></div>
+                        <!--ReqJ5-->
+                        <div id="error-box" class="error-box"></div>
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Reiniciar</button> 
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <article>
+                    <h2 class="titulos">¿Dónde encuentro videojuegos?</h2>
+                    <p>Si quieres ampliar tu lista de juegos, deberás de haber jugado a unos cuantos.</p>
+                    <p>
+                        Puedes entrar en la página oficial de 
+                        <!--ReqH9-->
+                        <a href="https://www.nintendo.com" target="_blank">Nintendo</a> 
+                        o en la de 
+                        <a href="https://store.steampowered.com/?l=spanish" target="_blank">Steam</a> 
+                        por ejemplo. ¡Encontrarás muchos videojuegos!
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <h2 class="titulos">Géneros de videojuegos populares</h2>
+                <p>En <strong>GaTra</strong> podrás registrar juegos de diversos géneros. ¡Hay una gran variedad!</p>
+                <!--ReqH14-->
+                <ul>
+                    <li>Acción</li>
+                    <li>RPG
+                        <ol> 
+                            <li>JRPG</li>
+                            <li>MMORPG</li>
+                            <li>Action-RPG</li>
+                        </ol>
+                    </li>
+                    <li>Shooter</li>
+                    <li>Estrategia</li>
+                    <li>Deportes</li>
+                    <li>Plataformas</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="titulos">Juegos populares</h2>
+                <!--ReqH15-->
+                <table border="1">
+                    <caption>Videojuegos populares por plataforma</caption>
+                    <thead>
+                        <tr>
+                            <th>Juego</th>
+                            <th colspan="2">Lanzamiento</th>
+                            <th>Género</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Team Fortress 2</td>
+                            <td>PC</td>
+                            <td>Oct 10, 2007</td>
+                            <td>Shooter</td>
+                        </tr>
+
+                        <tr>
+                            <td>Super Mario Odyssey</td>
+                            <td>Nintendo Switch</td>
+                            <td>Oct 27, 2017</td>
+                            <td>Plataformas</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">Resident Evil Requiem</td>
+                            <td>PC</td>
+                            <td>Feb 26, 2026</td>
+                            <td rowspan="3">Acción</td>
+                        </tr>
+                        <tr>
+                            <td>PlayStation 5</td>
+                            <td>Feb 27, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Xbox Series X</td>
+                            <td>Feb 27, 2026</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kingdom Hearts II</td>
+                            <td>PlayStation 2</td>
+                            <td>Dec 22, 2005</td>
+                            <td>Action-RPG</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <article>
+                    <h2 class="titulos">Últimas Reviews</h2>
+                    <p><strong>Team Fortress 2</strong></p>
+                    <!--ReqH12-->
+                    <figure>
+                        <!--ReqH10-->
+                        <a href="https://www.teamfortress.com/" target="_blank">
+                            <!--ReqH13-->
+                            <img src="/resources/images/TF2_logo.jpg" alt="Portada de TeamFortress2"
+                            title="TeamFortress2" width="110">
+                        </a>
+                        <figcaption>Logo TeamFortress2</figcaption>
+                    </figure>
+
+                    <!--ReqH7--> <!--ReqC9-->
+                    <p>-ManuMaster32: <cite id="resenias">"Divertido de jugar con amigos. Ese juego nunca morirá. Hay que mover el cacharro."</cite></p>
+                    
+                    <p><strong>Minecraft</strong></p>
+                    <figure>
+                        <a href="https://www.minecraft.net/es-es" target="_blank">
+                            <img src="/resources/images/Minecraft_logo.jpg" alt="Portada de Minecraft"
+                            title="Minecraft" width="110">
+                        </a>
+                        <figcaption>Logo Minecraft</figcaption>
+                    </figure>
+                    <p>-DragonFire: <cite id="resenias">"Juego muy entrete donde puedes hacer de todo. ¡Hasta me hice una casa de calabazas!"</cite></p>
+                </article>
+                
+            </section>
+        </main>
+        <footer>
+            <p> GaTra - GameTracker 2026. Todos los derechos reservados</p>
+        </footer>
+    </body>
+
+</html>
